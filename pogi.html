@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My World</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>ROCIELINDA.</p>
+        </section>
+    </main>
+    <div class="gallery">
+  <div class="gallery-item">
+    <img src="image/photo2.jpg" alt="Photo 1">
+  </div>
+  <div class="gallery-item">
+    <img src="image/photo3.jpg" alt="Photo 2">
+  </div>
+  <div class="gallery-item">
+    <img src="image/photo4.jpg" alt="Photo 3">
+  </div>
+  <div class="gallery-item">
+    <img src="image/photo5.jpg" alt="Photo 4">
+  </div>
+  <div class="gallery-item">
+    <img src="image/photo6.jpg" alt="Photo 5">
+  </div>
+  <div class="gallery-item">
+    <img src="image/photo7.jpg" alt="Photo 6">
+  </div>
+</div>
+
+    <footer>
+        <p>Copyright &copy; 2023 Your Website</p>
+    </footer>
+</body>
+<style >
+    @media (max-width: 767.98px) {
+  .socials {
+    flex-direction: column;
+  }
+
+  .socicon {
+    margin: 0.5rem 0;
+  }
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -1rem;
+}
+
+.gallery-item {
+  flex-basis: calc(33.333% - 2rem);
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .gallery-item {
+    flex-basis: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gallery-item {
+    flex-basis: 100%;
+  }
+}
+</style>
+</html>
